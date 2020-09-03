@@ -1,0 +1,218 @@
+.services {
+  @import '../main/variables.fonts';
+  @import '../main/variables.colors';
+  @import '../main/mixin';
+  background: $color-gray;
+  padding-top: 9px;
+  padding-bottom: 34px;
+
+  @media (min-width: $tablet) {
+    padding-top: 15px;
+    padding-bottom: 42px;
+  }
+
+  @media (min-width: $desktop) {
+    padding-top: 54px;
+    padding-bottom: 80px;
+  }
+
+  @media (min-width: $desktop-l) {
+    padding-top: 70px;
+  }
+
+  &__title {
+    font-weight: 700;
+    margin-top: 0;
+    font-size: $font-size-24;
+    line-height: $line-height-32;
+    margin-bottom: 14px;
+    color: $color-black;
+
+    @media (min-width: $desktop-l) {
+      font-size: $font-size-36;
+      line-height: $line-height-44;
+      margin-bottom: 16px;
+    }
+  }
+
+  &__text {
+    margin: 0;
+    max-width: 500px;
+
+    @media (min-width: $desktop) {
+      max-width: 340px;
+    }
+
+    @media (min-width: $desktop-l) {
+      max-width: 450px;
+    }
+  }
+
+  &__list {
+    max-width: 500px;
+    margin: 0 auto;
+
+    @media (min-width: $tablet) {
+      max-width: 562px;
+    }
+
+    @media (min-width: $desktop) {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      max-width: 960px;
+    }
+
+    @media (min-width: $desktop-l) {
+      max-width: inherit;
+      margin: 0;
+    }
+  }
+
+  &__item {
+    margin-bottom: 50px;
+
+    @media (min-width: $tablet) {
+      margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop) {
+      width: 43%;
+      margin-bottom: 0;
+    }
+
+    &_first {
+      @media (min-width: $desktop) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        margin-bottom: 90px;
+      }
+
+      @media (min-width: $desktop-l) {
+        margin-bottom: 126px;
+      }
+
+      .services__content {
+        @media (min-width: $desktop) {
+          width: 43%;
+        }
+      }
+
+      .services__picture {
+        @media (min-width: $desktop) {
+          height: 364px;
+        }
+
+        @media (min-width: $desktop-l) {
+          height: 485px;
+        }
+      }
+    }
+  }
+
+  &__picture {
+    display: block;
+    position: relative;
+    max-width: 449px;
+
+    @media (min-width: $tablet) {
+      max-width: inherit;
+    }
+  }
+
+  &__img {
+    display: block;
+    height: auto;
+
+    @media (max-width: ($tablet - 1)) {
+      position: relative;
+    }
+
+    &_message {
+      width: 356px;
+      margin-bottom: -37px;
+      margin-left: -46px;
+
+      @media (min-width: $mobile) {
+        width: 449px;
+        margin-left: -57px;
+      }
+
+      @media (min-width: $tablet) {
+        width: 674px;
+        margin-left: -57px;
+        margin-bottom: -58px;
+      }
+
+      @media (min-width: $desktop) {
+        position: absolute;
+        top: -26px;
+        left: -57px;
+        width: 534px;
+        margin-left: 0;
+        margin-bottom: 0;
+      }
+
+      @media (min-width: $desktop-l) {
+        width: 674px;
+      }
+    }
+
+    &_media {
+      width: 356px;
+      margin-top: -25px;
+      margin-bottom: -37px;
+      margin-left: -45px;
+
+      @media (min-width: $mobile) {
+        width: 449px;
+        margin-left: -57px;
+      }
+
+      @media (min-width: $tablet) {
+        margin: -25px 0 -59px -57px;
+        width: 648px;
+      }
+
+      @media (min-width: $desktop) {
+        margin-bottom: -14px;
+        width: 480px;
+      }
+
+      @media (min-width: $desktop-l) {
+        margin-left: -57px;
+        margin-bottom: -10px;
+        width: 574px;
+      }
+    }
+
+    &_notify {
+      width: 369px;
+      margin: -25px 0 -37px -59px;
+
+      @media (min-width: $mobile) {
+        width: 467px;
+        margin-left: -76px;
+      }
+
+      @media (min-width: $tablet) {
+        margin: -25px 0 -59px -83px;
+        width: 656px;
+      }
+
+      @media (min-width: $desktop) {
+        margin-left: -110px;
+        margin-bottom: -19px;
+        width: 526px;
+      }
+
+      @media (min-width: $desktop-l) {
+        margin-left: -130px;
+        margin-bottom: -10px;
+        width: 622px;
+      }
+    }
+  }
+}

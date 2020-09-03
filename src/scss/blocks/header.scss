@@ -1,0 +1,44 @@
+.header {
+  @import "../main/variables";
+  @import "../main/variables.colors";
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  padding-top: 25px;
+  z-index: 100;
+
+  @media (min-width: $desktop-l) {
+    padding-top: 34px;
+  }
+
+  &__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    @media (min-width: $desktop) {
+      align-items: flex-start;
+    }
+  }
+
+  &__logo {
+    display: block;
+    position: relative;
+    width: auto;
+    height: 31px;
+    z-index: 101;
+    max-width: 198px;
+
+    @media (min-width: $desktop) {
+      position: static;
+      height: 45px;
+    }
+
+    @media (min-width: $desktop-l) {
+      position: static;
+      height: 55px;
+    }
+  }
+}
