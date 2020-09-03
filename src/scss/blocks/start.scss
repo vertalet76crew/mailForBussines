@@ -47,50 +47,6 @@
 
   &__wrap {
     position: relative;
-
-    &:before {
-      display: block;
-      content: "";
-      position: relative;
-      left: 50%;
-      transform: translateX(-50%);
-      width: 375px;
-      height: 265px;
-      margin-bottom: 20px;
-      background-repeat: no-repeat;
-      background-position: 0 0;
-      background-size: cover;
-      background-image: url($img + "/start-bg-375.png");
-      background-position: -150px 0;
-
-      @media (min-width: $tablet) {
-        width: 768px;
-        height: 471px;
-        margin-bottom: 11px;
-        background-image: url($img + "/start-bg-768.png");
-        background-position: right;
-      }
-
-      @media (min-width: $desktop) {
-        position: absolute;
-        top: -123px;
-        left: 50%;
-        width: 721px;
-        height: 471px;
-        transform: translateX(-98px);
-        background-image: url($img + "/start-bg-1020.png");
-        background-position: right;
-      }
-
-      @media (min-width: $desktop-l) {
-        top: -174px;
-        width: 1045px;
-        height: 622px;
-        transform: translateX(-127px);
-        background-image: url($img + "/start-bg.png");
-        background-position: -150px;
-      }
-    }
   }
 
   &__content {
@@ -109,7 +65,7 @@
 
     @media (min-width: $desktop-l) {
       width: 100%;
-      max-width: 580px;
+      max-width: 840px;
       font-size: $font-size-20;
       line-height: $line-height-32;
     }
@@ -121,7 +77,8 @@
     }
 
     @media (min-width: $desktop-l) {
-      max-width: 79%;
+      font-size: $font-size-24;
+      line-height: $line-height-36;
     }
   }
 
