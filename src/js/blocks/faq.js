@@ -15,4 +15,4 @@ function faq() {
   }
 }
 
-export default faq();
+export default faq;
