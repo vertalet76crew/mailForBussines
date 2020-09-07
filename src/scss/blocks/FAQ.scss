@@ -148,14 +148,22 @@
       font-family: "Mail_Sans_Roman";
       margin-bottom: 16px;
       max-width: 600px;
+      margin-right: 30px;
     }
 
     &-answer {
-      font-size: $font-size-20;
-      line-height: $line-height-32;
-      font-family: "Mail_Sans_Roman";
-      display: none;
-      max-width: 600px;
+      @media (min-width: $mobile-s) {
+        font-size: $font-size-15;
+        line-height: $line-height-24;
+        font-family: "Mail_Sans_Roman";
+        display: none;
+        max-width: 600px;
+      }
+      @media (min-width: $desktop) {
+        font-size: $font-size-20;
+        line-height: $line-height-32;
+      }
+
       &_active {
         display: block;
       }
