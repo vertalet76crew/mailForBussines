@@ -9,7 +9,7 @@ function partnersCarousel() {
       nav: false,
       dots: true,
       smartSpeed: 700,
-
+      startPosition: 1,
       loop: true,
       responsive: {
         320: {

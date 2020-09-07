@@ -4,38 +4,99 @@
   @import "../main/variables.colors";
   background-color: $color-white;
   &_wrap {
-    padding-top: 82px;
-    padding-bottom: 82px;
+    @media (min-width: $mobile-s) {
+      padding-top: 60px;
+      padding-bottom: 60px;
+    }
+    @media (min-width: $tablet) {
+      padding-top: 72px;
+      padding-bottom: 72px;
+    }
+    @media (min-width: $desktop) {
+      padding-top: 64px;
+      padding-bottom: 64px;
+    }
+    @media (min-width: $desktop-l) {
+      padding-top: 86px;
+      padding-bottom: 86px;
+    }
   }
   &__block {
     display: flex;
     justify-content: space-between;
     @media (min-width: $mobile-s) {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
     @media (min-width: $desktop) {
       flex-direction: row;
     }
   }
   &__form {
+    @media (min-width: $tablet) {
+      display: flex;
+      margin-top: 32px;
+    }
+    @media (min-width: $desktop) {
+      display: block;
+    }
     @media (min-width: $desktop-l) {
       max-width: 420px;
     }
+
     &-title {
+      @media (min-width: $mobile-s) {
+        display: none;
+      }
+      @media (min-width: $desktop) {
+        display: block;
+      }
       @media (min-width: $desktop-l) {
         font-size: $font-size-60;
         line-height: $line-height-68;
         margin: 0 0 38px;
         font-family: "Mail Sans Roman", sans-serif;
       }
+
+      &_tablet {
+        @media (min-width: $mobile-s) {
+          font-size: $font-size-36;
+          line-height: $line-height-44;
+          margin-top: 0;
+          display: block;
+        }
+        @media (min-width: $desktop) {
+          display: none;
+        }
+      }
     }
     &-description {
-      @media (min-width: $desktop-l) {
+      @media (min-width: $mobile-s) {
+        font-size: $font-size-24;
+        line-height: $line-height-30;
+        font-weight: bold;
+        font-family: "Mail Sans Roman", sans-serif;
+        max-width: 344px;
+        margin-bottom: 32px;
+      }
+      @media (min-width: $tablet) {
+        margin: 0 16px 0 0;
+      }
+      @media (min-width: $desktop) {
         max-width: 276px;
         margin-bottom: 24px;
         font-size: $font-size-20;
         line-height: $line-height-32;
         font-family: "Mail Sans Roman", sans-serif;
+        font-weight: normal;
+      }
+    }
+    .button_type2 {
+      @media (min-width: $mobile-s) {
+        width: 100%;
+        max-width: 300px;
+      }
+      @media (min-width: $desktop) {
+        max-width: 235px;
       }
     }
   }

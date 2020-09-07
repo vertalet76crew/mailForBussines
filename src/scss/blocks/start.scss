@@ -7,9 +7,13 @@
   padding-top: 114px;
   padding-bottom: 70px;
 
+  @media (min-width: $mobile-s) {
+    padding-top: 160px;
+    padding-bottom: 160px;
+  }
   @media (min-width: $tablet) {
-    padding-top: 45px;
-    padding-bottom: 112px;
+    padding-top: 180px;
+    padding-bottom: 180px;
   }
 
   @media (min-width: $desktop) {
