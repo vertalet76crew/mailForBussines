@@ -123,6 +123,8 @@
     }
 
     &__item {
+      list-style: none;
+
       &:not(:last-child) {
         margin-bottom: 8px;
       }

@@ -1,7 +1,7 @@
 .start {
-  @import "../main/variables";
-  @import "../main/variables.fonts";
-  @import "../main/variables.colors";
+  @import '../main/variables';
+  @import '../main/variables.fonts';
+  @import '../main/variables.colors';
   color: $color-light;
   background: $color-dark;
   padding-top: 114px;
@@ -11,6 +11,7 @@
     padding-top: 160px;
     padding-bottom: 160px;
   }
+
   @media (min-width: $tablet) {
     padding-top: 180px;
     padding-bottom: 180px;

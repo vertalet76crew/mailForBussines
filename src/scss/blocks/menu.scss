@@ -1,7 +1,7 @@
 .menu {
-  @import "../main/variables";
-  @import "../main/variables.fonts";
-  @import "../main/variables.colors";
+  @import '../main/variables';
+  @import '../main/variables.fonts';
+  @import '../main/variables.colors';
 
   font-size: 0;
   line-height: 0;
@@ -18,7 +18,7 @@
     }
 
     .menu__door {
-      background-image: url($img + "/close.svg");
+      background-image: url($img + '/close.svg');
     }
   }
 
@@ -27,7 +27,7 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
-    background: url($img + "/menu.svg") no-repeat 50% 50%;
+    background: url($img + '/menu.svg') no-repeat 50% 50%;
     border: 0 none;
     outline: none;
     z-index: 101;
@@ -72,6 +72,7 @@
   &__right-item {
     display: flex;
     align-items: center;
+
     .menu__item {
       list-style: none;
     }

@@ -1,7 +1,7 @@
 .features {
-  @import "../main/variables";
-  @import "../main/variables.fonts";
-  @import "../main/variables.colors";
+  @import '../main/variables';
+  @import '../main/variables.fonts';
+  @import '../main/variables.colors';
   padding-top: 54px;
   padding-bottom: 11px;
 
@@ -20,6 +20,7 @@
       display: flex;
       justify-content: space-between;
       padding-bottom: 80px;
+
       &:last-child {
         padding-bottom: 0;
       }

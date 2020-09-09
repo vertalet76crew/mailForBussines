@@ -1,9 +1,10 @@
 .partners {
-  @import "../main/variables";
-  @import "../main/variables.fonts";
-  @import "../main/variables.colors";
+  @import '../main/variables';
+  @import '../main/variables.fonts';
+  @import '../main/variables.colors';
   background-color: $color-gray;
   position: relative;
+
   &__wrap {
     @media (min-width: $mobile-s) {
       max-width: 355px;
@@ -37,14 +38,17 @@
     height: 100%;
     width: 100%;
     display: block;
+
     &_tele2 {
-      background: url($img + "/Tele2.svg") no-repeat;
+      background: url($img + '/Tele2.svg') no-repeat;
     }
+
     &_rgs {
-      background: url($img + "/rosgosstrakh.svg") no-repeat;
+      background: url($img + '/rosgosstrakh.svg') no-repeat;
     }
+
     &_levis {
-      background: url($img + "/levis.svg") no-repeat;
+      background: url($img + '/levis.svg') no-repeat;
     }
   }
 
@@ -56,6 +60,7 @@
       margin-top: 21px;
     }
   }
+
   &__item {
     transition: all ease 0.2s;
     display: flex;
@@ -70,17 +75,20 @@
       padding: 28px;
       box-sizing: border-box;
     }
+
     @media (min-width: $tablet) {
       max-width: 500px;
       border-radius: 24px;
       min-height: 512px;
     }
+
     @media (min-width: $desktop) {
       max-width: 300px;
       border-radius: 24px;
       min-height: 440px;
       padding: 32px;
     }
+
     @media (min-width: $desktop-l) {
       max-width: 400px;
       background: #fcfcfc;
@@ -90,15 +98,20 @@
       box-sizing: border-box;
     }
   }
+
   .owl-carousel .owl-stage-outer {
+
     @media (min-width: $desktop) {
       min-height: 570px;
     }
+
     @media (min-width: $desktop-l) {
       min-height: 643px;
     }
   }
+
   .owl-item.active {
+
     @media (min-width: $desktop) {
       width: 300px !important;
       max-width: 100%;
@@ -108,20 +121,25 @@
       max-width: 100%;
     }
   }
+
   .owl-item.active.center {
     @media (min-width: $desktop) {
       width: 330px !important;
       max-width: 100%;
     }
+
     @media (min-width: $desktop-l) {
       width: 430px !important;
       max-width: 100%;
     }
+
     .partners__item {
       width: 100%;
+
       .partners__text {
         font-weight: 600;
       }
+
       @media (min-width: $desktop) {
         width: 330px !important;
         max-width: 100%;
@@ -129,6 +147,7 @@
         transform: translateY(-38px);
         background-color: $color-white;
       }
+
       @media (min-width: $desktop-l) {
         width: 430px !important;
         max-width: 100%;
@@ -137,12 +156,15 @@
       }
     }
   }
+
   .owl-dots {
     display: flex;
     justify-content: center;
+
     @media (min-width: $mobile) {
       margin-top: 34px;
     }
+
     @media (min-width: $desktop) {
       margin-top: 0;
     }
@@ -155,6 +177,7 @@
       border-radius: 50%;
       display: block;
       outline: none;
+
       &.active {
         background: $color-button-type1;
       }
@@ -183,6 +206,7 @@
       font-weight: normal;
     }
   }
+
   &__name {
     @media (min-width: $mobile-s) {
       font-size: $font-size-20;
@@ -200,6 +224,7 @@
       font-weight: 500;
     }
   }
+
   &__description {
     @media (min-width: $mobile-s) {
       font-size: $font-size-15;

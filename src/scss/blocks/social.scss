@@ -32,6 +32,8 @@
       line-height: $line-height-20;
       color: $color-light;
       margin-bottom: 14px;
+      list-style: none;
+
 
       @media (min-width: $tablet) {
         display: none;

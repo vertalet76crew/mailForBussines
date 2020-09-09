@@ -9,10 +9,10 @@ body {
 }
 
 body {
-  @import "variables";
-  @import "variables.fonts";
-  @import "variables.colors";
-  font-family: "Mail_Sans_Roman", sans-serif;
+  @import 'variables';
+  @import 'variables.fonts';
+  @import 'variables.colors';
+  font-family: 'Mail_Sans_Roman', sans-serif;
   font-size: $font-size-15;
   line-height: $line-height-24;
   font-weight: 400;
