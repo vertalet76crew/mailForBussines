@@ -66,6 +66,11 @@ function formRequest(isMobile) {
         if (!isError) {
             $sendBlock.addClass(classSendForm);
             $formRequestBlock.addClass(classHideForm);
+            window.dataLayer.push({
+                category: 'corp-solutions_request',
+                ' label': 'corp-solutions_form',
+                action: 'form_submitiion'
+            });
         }
 
         e.preventDefault();
