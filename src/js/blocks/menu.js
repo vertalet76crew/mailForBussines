@@ -1,4 +1,3 @@
-/** menu.js **/
 import $ from 'jquery';
 
 function menu(isMobile) {

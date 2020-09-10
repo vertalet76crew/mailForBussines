@@ -1,10 +1,8 @@
-/** news.js **/
 import $ from 'jquery';
 import 'owl.carousel';
 
 function newsCarousel() {
     const $slider = $('[data-carousel="news"]');
-
     if ($slider.length) {
         $slider.owlCarousel({
             nav: false,

@@ -68,7 +68,7 @@
       ],
       "linebreak-style": [
          "error",
-         "unix"
+         "windows"
       ],
       "max-len": [
          "warn",

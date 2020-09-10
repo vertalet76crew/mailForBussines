@@ -14,7 +14,8 @@
       "browser": true,
       "amd": true,
       "es6": true,
-      "jasmine": true
+      "jasmine": true,
+      "node": true
    },
    "globals": {},
    "extends": [
@@ -68,15 +69,14 @@
       ],
       "linebreak-style": [
          "error",
-         "unix"
+         "windows"
       ],
       "max-len": [
          "warn",
          {
             "ignoreComments": true,
             "ignoreUrls": true,
-            "ignorePattern": "^\\s*import\\s.+from\\s+'",
-            "ignoreRegExpLiterals": true
+            "ignorePattern": "^\\s*import\\s.+from\\s+'"
          }
       ],
       "new-cap": [

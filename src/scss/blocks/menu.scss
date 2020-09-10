@@ -10,18 +10,6 @@
     margin-right: -20px;
   }
 
-  &_open {
-    .menu__frame {
-      @media (max-width: ($desktop - 1)) {
-        display: block;
-      }
-    }
-
-    .menu__door {
-      background-image: url($img + '/close.svg');
-    }
-  }
-
   &__door {
     position: relative;
     width: 24px;
@@ -54,6 +42,18 @@
     }
   }
 
+  &_open {
+    .menu__frame {
+      @media (max-width: ($desktop - 1)) {
+        display: block;
+      }
+    }
+
+    .menu__door {
+      background-image: url($img + '/close.svg');
+    }
+  }
+
   &__left-item {
     display: flex;
     align-items: center;
@@ -63,19 +63,11 @@
     @media (min-width: $desktop) {
       padding-right: 92px;
     }
-
-    .menu__item {
-      list-style: none;
-    }
   }
 
   &__right-item {
     display: flex;
     align-items: center;
-
-    .menu__item {
-      list-style: none;
-    }
   }
 
   &__list {
@@ -160,6 +152,26 @@
     }
   }
 
+  &__level2 {
+    display: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+    @media (min-width: $desktop) {
+      position: absolute;
+      top: 28px;
+      left: 0;
+      width: 230px;
+      background: $color-menu;
+      border-radius: 12px;
+    }
+
+    @media (min-width: $desktop-l) {
+      top: 34px;
+    }
+  }
+
   &__item {
     position: relative;
     margin: 0;
@@ -169,6 +181,27 @@
     font-weight: 500;
     color: $color-white;
     cursor: pointer;
+    list-style: none;
+
+    &_open {
+      @media (max-width: ($desktop - 1)) {
+        margin-bottom: 4px;
+      }
+
+      .menu__link {
+        @media (min-width: $desktop) {
+          color: $color-menu-link-active;
+        }
+      }
+
+      .menu__arrow {
+        transform: translateY(-50%) scale(1, -1);
+      }
+
+      .menu__level2 {
+        display: block;
+      }
+    }
 
     @media (min-height: $mobile-height) {
       margin: 0 0 10px;
@@ -211,46 +244,6 @@
           display: block;
         }
       }
-    }
-
-    &_open {
-      @media (max-width: ($desktop - 1)) {
-        margin-bottom: 4px;
-      }
-
-      .menu__link {
-        @media (min-width: $desktop) {
-          color: $color-menu-link-active;
-        }
-      }
-
-      .menu__arrow {
-        transform: translateY(-50%) scale(1, -1);
-      }
-
-      .menu__level2 {
-        display: block;
-      }
-    }
-  }
-
-  &__level2 {
-    display: none;
-    margin: 0;
-    padding: 0;
-    list-style: none;
-
-    @media (min-width: $desktop) {
-      position: absolute;
-      top: 28px;
-      left: 0;
-      width: 230px;
-      background: $color-menu;
-      border-radius: 12px;
-    }
-
-    @media (min-width: $desktop-l) {
-      top: 34px;
     }
   }
 

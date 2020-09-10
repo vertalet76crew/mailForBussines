@@ -52,6 +52,29 @@
     }
   }
 
+  &__text {
+    @media (min-width: $mobile-s) {
+      font-size: $font-size-24;
+      line-height: $line-height-30;
+      font-weight: bold;
+    }
+    @media (min-width: $tablet) {
+      font-size: $font-size-24;
+      line-height: $line-height-30;
+      font-weight: bold;
+    }
+    @media (min-width: $desktop) {
+      font-weight: normal;
+      font-size: $font-size-18;
+      line-height: $line-height-28;
+    }
+    @media (min-width: $desktop-l) {
+      font-size: $font-size-24;
+      line-height: $line-height-36;
+      font-weight: normal;
+    }
+  }
+
   .owl-stage {
     @media (min-width: $desktop) {
       margin-top: 38px;
@@ -62,7 +85,6 @@
   }
 
   &__item {
-    transition: all ease 0.2s;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -181,29 +203,6 @@
       &.active {
         background: $color-button-type1;
       }
-    }
-  }
-
-  &__text {
-    @media (min-width: $mobile-s) {
-      font-size: $font-size-24;
-      line-height: $line-height-30;
-      font-weight: bold;
-    }
-    @media (min-width: $tablet) {
-      font-size: $font-size-24;
-      line-height: $line-height-30;
-      font-weight: bold;
-    }
-    @media (min-width: $desktop) {
-      font-weight: normal;
-      font-size: $font-size-18;
-      line-height: $line-height-28;
-    }
-    @media (min-width: $desktop-l) {
-      font-size: $font-size-24;
-      line-height: $line-height-36;
-      font-weight: normal;
     }
   }
 
