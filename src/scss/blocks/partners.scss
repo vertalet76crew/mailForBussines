@@ -19,12 +19,12 @@
     @media (min-width: $desktop) {
       max-width: 970px;
       margin: 0 auto;
-      padding: 22px 32px 60px;
+      padding: 22px 0 60px;
     }
     @media (min-width: $desktop-l) {
       max-width: 1294px;
       margin: 0 auto;
-      padding: 39px 32px 60px;
+      padding: 39px 0 60px;
     }
   }
 
@@ -40,15 +40,15 @@
     display: block;
 
     &_tele2 {
-      background: url($img + '/Tele2.svg') no-repeat;
+      background: url($img + "/Tele2.svg") no-repeat;
     }
 
     &_rgs {
-      background: url($img + '/rosgosstrakh.svg') no-repeat;
+      background: url($img + "/rosgosstrakh.svg") no-repeat;
     }
 
     &_levis {
-      background: url($img + '/levis.svg') no-repeat;
+      background: url($img + "/levis.svg") no-repeat;
     }
   }
 
@@ -90,7 +90,6 @@
     justify-content: space-between;
 
     @media (min-width: $mobile-s) {
-      max-width: 355px;
       background: #fcfcfc;
       border-radius: 24px;
       min-height: 512px;
@@ -99,30 +98,32 @@
     }
 
     @media (min-width: $tablet) {
-      max-width: 500px;
       border-radius: 24px;
       min-height: 512px;
     }
 
     @media (min-width: $desktop) {
-      max-width: 300px;
       border-radius: 24px;
       min-height: 440px;
       padding: 32px;
     }
 
     @media (min-width: $desktop-l) {
-      max-width: 400px;
       background: #fcfcfc;
       border-radius: 24px;
       min-height: 558px;
       padding: 40px;
       box-sizing: border-box;
     }
+
+    @media (min-width: $desktop-l) {
+      position: absolute;
+      width: 400px;
+      transform: translate(0, 0);
+    }
   }
 
   .owl-carousel .owl-stage-outer {
-
     @media (min-width: $desktop) {
       min-height: 570px;
     }
@@ -133,48 +134,42 @@
   }
 
   .owl-item.active {
-
     @media (min-width: $desktop) {
-      width: 300px !important;
-      max-width: 100%;
+      width: 300px;
     }
     @media (min-width: $desktop-l) {
-      width: 400px !important;
-      max-width: 100%;
+      width: 400px;
     }
   }
 
   .owl-item.active.center {
     @media (min-width: $desktop) {
-      width: 330px !important;
-      max-width: 100%;
+      width: 330px;
     }
 
     @media (min-width: $desktop-l) {
-      width: 430px !important;
-      max-width: 100%;
+      width: 430px;
     }
 
     .partners__item {
       width: 100%;
-
-      .partners__text {
-        font-weight: 600;
-      }
-
       @media (min-width: $desktop) {
-        width: 330px !important;
-        max-width: 100%;
+        position: absolute;
+        width: 330px;
         min-height: 516px;
-        transform: translateY(-38px);
         background-color: $color-white;
+        transform: translate(-15px, -38px);
       }
 
       @media (min-width: $desktop-l) {
-        width: 430px !important;
-        max-width: 100%;
+        position: absolute;
+        width: 430px;
         min-height: 600px;
-        transform: translateY(-21px);
+        transform: translate(-15px, -22px);
+      }
+
+      .partners__text {
+        font-weight: 600;
       }
     }
   }

@@ -1,4 +1,5 @@
-
+import 'polyfill-array-includes';
+import 'element-closest-polyfill';
 import $ from 'jquery';
 import menu from './blocks/menu';
 

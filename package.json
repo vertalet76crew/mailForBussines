@@ -9,7 +9,8 @@
     "build": "webpack --config ./config/webpack.config.prod.js",
     "jslint": "eslint --config ./config/.eslintrc ./src/**/*.js",
     "jslintFix": "eslint --config ./config/.eslintrc ./src/**/*.js --fix",
-    "stylelint": "stylelint --config ./config/.stylelintrc ./src/**/*.scss"
+    "stylelint": "stylelint --config ./config/.stylelintrc ./src/**/*.scss",
+    "stylelintFix": "stylelint --config ./config/.stylelintrc ./src/**/*.scss --fix"
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
@@ -66,5 +67,9 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "dependencies": {
+    "element-closest-polyfill": "^1.0.2",
+    "polyfill-array-includes": "^2.0.0"
   }
 }

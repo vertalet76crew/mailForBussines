@@ -15,7 +15,7 @@
     width: 24px;
     height: 24px;
     cursor: pointer;
-    background: url($img + '/menu.svg') no-repeat 50% 50%;
+    background: url($img + "/menu.svg") no-repeat 50% 50%;
     border: 0 none;
     outline: none;
     z-index: 101;
@@ -50,7 +50,7 @@
     }
 
     .menu__door {
-      background-image: url($img + '/close.svg');
+      background-image: url($img + "/close.svg");
     }
   }
 
@@ -212,7 +212,7 @@
       font-size: $font-size-13;
       line-height: $line-height-17;
       margin: 0 28px 0 0;
-      padding-bottom: 12px;
+      // padding-bottom: 12px;
     }
 
     @media (min-width: $desktop-l) {

@@ -11,19 +11,18 @@ function partnersCarousel() {
             smartSpeed: 700,
             startPosition: 1,
             loop: true,
-            margin: 32,
             responsive: {
                 320: {
                     autoWidth: false,
                     responsiveClass: true,
-                    margin: 0,
+                    margin: 20,
                     items: 1,
-                    center: false
+                    center: true
                 },
                 1020: {
                     autoWidth: false,
                     responsiveClass: true,
-                    margin: 20,
+                    margin: 35,
                     items: 3,
                     center: true
                 },
@@ -31,7 +30,8 @@ function partnersCarousel() {
                     autoWidth: false,
                     responsiveClass: true,
                     items: 3,
-                    center: true
+                    center: true,
+                    margin: 47
                 }
             }
         });
