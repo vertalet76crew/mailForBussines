@@ -2,6 +2,7 @@
   @import '../main/variables.fonts';
   @import '../main/variables.colors';
   @import '../main/mixin';
+
   margin: 0;
   padding: 0;
 
@@ -23,10 +24,10 @@
     box-sizing: border-box;
     appearance: none;
 
-    @include placeholder ($color-placeholder);
+    @include placeholder($color-placeholder);
 
     &:focus {
-      @include placeholder (transparent);
+      @include placeholder(transparent);
     }
 
     &_error {

@@ -1,8 +1,8 @@
 import 'polyfill-array-includes';
 import 'element-closest-polyfill';
 import $ from 'jquery';
-import menu from './blocks/menu';
 
+import menu from './blocks/menu';
 import formRequest from './blocks/form-request';
 import newsCarousel from './blocks/news';
 import faq from './blocks/faq';

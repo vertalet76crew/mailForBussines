@@ -1,5 +1,6 @@
 import $ from 'jquery';
 import Inputmask from 'inputmask';
+
 function formRequest(isMobile) {
     const $popup = $('[data-block="popup"]');
     const $body = $('body');

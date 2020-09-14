@@ -2,6 +2,7 @@
   @import '../main/variables';
   @import '../main/variables.fonts';
   @import '../main/variables.colors';
+
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -33,7 +34,6 @@
       color: $color-light;
       margin-bottom: 14px;
       list-style: none;
-
 
       @media (min-width: $tablet) {
         display: none;
