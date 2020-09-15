@@ -30,15 +30,17 @@
     height: 31px;
     z-index: 101;
     max-width: 198px;
+    background: url('/src/images/logo.svg') no-repeat left;
+    background-size: contain;
 
-    @media (min-width: $desktop) {
+    @media (min-width: $mobile-s) {
       position: static;
-      height: 45px;
+      height: 34px;
     }
 
     @media (min-width: $desktop-l) {
-      position: static;
       height: 55px;
+      background-size: 100%;
     }
   }
 }

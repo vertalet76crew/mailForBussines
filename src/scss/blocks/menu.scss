@@ -166,6 +166,13 @@
       width: 230px;
       background: $color-menu;
       border-radius: 12px;
+
+      .menu__level2item {
+        &:hover {
+          color: $color-white;
+          background: rgba(14, 67, 255, 0.26);
+        }
+      }
     }
 
     @media (min-width: $desktop-l) {
@@ -174,16 +181,6 @@
   }
 
   &__item {
-    position: relative;
-    margin: 0;
-    padding: 0;
-    font-size: $font-size-22;
-    line-height: $line-height-60;
-    font-weight: 500;
-    color: $color-white;
-    cursor: pointer;
-    list-style: none;
-
     &_open {
       @media (max-width: ($desktop - 1)) {
         margin-bottom: 4px;
@@ -203,6 +200,30 @@
         display: block;
       }
     }
+    position: relative;
+    margin: 0;
+    padding: 0;
+    font-size: $font-size-22;
+    line-height: $line-height-60;
+    font-weight: 500;
+    color: $color-white;
+    cursor: pointer;
+    list-style: none;
+
+    &:hover {
+      .menu__level2 {
+        display: block;
+      }
+
+      .menu__link {
+        color: $color-menu-link-active;
+      }
+
+      .menu__arrow {
+        transform: translateY(-50%) scale(1, -1);
+      }
+    }
+
 
     @media (min-height: $mobile-height) {
       margin: 0 0 10px;
