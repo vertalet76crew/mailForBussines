@@ -158,6 +158,8 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    // list-style-image: url('data:0');
+
 
     @media (min-width: $desktop) {
       position: absolute;
@@ -213,6 +215,10 @@
     &:hover {
       .menu__level2 {
         display: block;
+        list-style: none;
+        list-style-image: none;
+        list-style-type: none;
+        overflow: hidden;
       }
 
       .menu__link {
