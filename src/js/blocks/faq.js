@@ -2,9 +2,7 @@ import $ from 'jquery';
 
 function faq() {
     const $container = $('[data-faq="container"]');
-    $container.on('click', (e) => clickHandler(e));
-
-    function clickHandler(e) {
+    $container.on('click', function(e) {
         const faqRightItem = $(e.target).closest('.faq__right-item');
         if (faqRightItem) {
             const $answer = faqRightItem.find('[data-click="close"]');
@@ -13,7 +11,7 @@ function faq() {
             $btn.toggleClass('faq__open-close_active');
         }
         return false;
-    }
+    });
 }
 
 export default faq;
