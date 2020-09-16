@@ -57,7 +57,7 @@
     font-weight: 700;
     color: $color-black;
 
-    &_column {
+    &_short {
       @media (min-width: $desktop) {
         max-width: 280px;
       }
