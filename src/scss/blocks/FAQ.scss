@@ -6,6 +6,7 @@
   background-color: $color-white;
 
   &_wrap {
+
     @media (min-width: $mobile-s) {
       padding-top: 60px;
       padding-bottom: 60px;
@@ -120,6 +121,11 @@
         max-width: 235px;
       }
     }
+  }
+
+  &__link {
+    text-decoration: none;
+    color: inherit;
   }
 
   &__right {

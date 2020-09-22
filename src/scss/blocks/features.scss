@@ -58,7 +58,12 @@
     color: $color-black;
 
     &_short {
+
       @media (min-width: $desktop) {
+        max-width: 200px;
+      }
+
+      @media (min-width: $desktop-l) {
         max-width: 280px;
       }
     }
@@ -83,18 +88,30 @@
   }
 
   &__icon {
+    height: 60px;
     width: 60px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     margin: 0 auto 20px;
 
-    @media (min-width: $tablet) {
-      margin-bottom: 0;
+    &_left {
+      transform: translateX(-9px);
+    }
+
+    @media (min-width: $mobile-s) {
+      margin-bottom: 8px;
     }
 
     @media (min-width: $desktop) {
       margin-left: 0;
       margin-right: 0;
-      margin-bottom: 20px;
-      min-height: 63px;
+      margin-bottom: 18px;
+    }
+
+    @media (min-width: $desktop-l) {
+      height: 80px;
+      width: 80px;
     }
   }
 

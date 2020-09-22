@@ -17,21 +17,25 @@ function partnersCarousel() {
                     responsiveClass: true,
                     margin: 20,
                     items: 1,
-                    center: true
+                    center: true,
+                    dots: false,
+                    loop: false
                 },
                 1020: {
                     autoWidth: false,
                     responsiveClass: true,
                     margin: 35,
                     items: 3,
-                    center: true
+                    center: true,
+                    loop: true
                 },
                 1360: {
                     autoWidth: false,
                     responsiveClass: true,
                     items: 3,
                     center: true,
-                    margin: 47
+                    margin: 47,
+                    loop: true
                 }
             }
         });
