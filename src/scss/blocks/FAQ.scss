@@ -8,8 +8,7 @@
   &_wrap {
 
     @media (min-width: $mobile-s) {
-      padding-top: 60px;
-      padding-bottom: 60px;
+      padding: 60px 10px;
     }
 
     @media (min-width: $tablet) {
@@ -41,6 +40,27 @@
   }
 
   &__form {
+
+    @media (min-width: $tablet) {
+      display: flex;
+      margin-top: 32px;
+    }
+
+    @media (min-width: $desktop) {
+      display: block;
+      margin-top: 0;
+    }
+
+    @media (min-width: $desktop-l) {
+      max-width: 420px;
+    }
+
+    @media (min-width: $mobile) {
+      max-width: 300px;
+      margin: 0 auto;
+      display: block;
+    }
+
     @media (min-width: $tablet) {
       display: flex;
       margin-top: 32px;
