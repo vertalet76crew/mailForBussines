@@ -64,7 +64,7 @@
         display: block;
         font-size: $font-size-36;
         line-height: $line-height-44;
-        font-family: 'Mail Sans Roman', sans-serif;
+        font-family: 'Mail_Sans_Roman', sans-serif;
         margin: 0 0 42px;
       }
 
@@ -72,7 +72,7 @@
         font-size: $font-size-60;
         line-height: $line-height-68;
         margin: 0 0 38px;
-        font-family: 'Mail Sans Roman', sans-serif;
+        font-family: 'Mail_Sans_Roman', sans-serif;
       }
 
       &_tablet {
@@ -93,7 +93,7 @@
         font-size: $font-size-24;
         line-height: $line-height-30;
         font-weight: bold;
-        font-family: 'Mail Sans Roman', sans-serif;
+        font-family: 'Mail_Sans_Roman', sans-serif;
         max-width: 340px;
         margin-bottom: 32px;
       }
@@ -107,7 +107,7 @@
         margin-bottom: 24px;
         font-size: $font-size-20;
         line-height: $line-height-32;
-        font-family: 'Mail Sans Roman', sans-serif;
+        font-family: 'Mail_Sans_Roman', sans-serif;
         font-weight: normal;
       }
     }
@@ -124,7 +124,7 @@
   }
 
   &__link {
-    text-decoration: none;
+    text-decoration: underline;
     color: inherit;
   }
 

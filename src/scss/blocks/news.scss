@@ -38,7 +38,15 @@
     }
 
     &_first {
-      padding-left: 20px;
+      padding-left: 10px;
+
+      @media (min-width: $tablet) {
+        padding-left: 40px;
+      }
+
+      @media (min-width: $desktop-l) {
+        padding-left: 60px;
+      }
     }
 
     &_last {
@@ -156,21 +164,11 @@
   }
 
   .owl-stage-outer {
+    padding-bottom: 0;
 
-    // .owl-stage{
-
-    //   @media (min-width: $tablet){
-    //     left: 20px;
-    //   }
-
-    //   @media (min-width: $desktop){
-    //     left: 20px;
-    //   }
-
-    //    @media (min-width: $desktop-l){
-    //     left: 20px;
-    //   }
-    // }
+    .owl-stage {
+      padding-bottom: 20px;
+    }
 
     @media (min-width: $mobile) {
       padding-left: 10px;

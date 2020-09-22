@@ -99,6 +99,17 @@
       transform: translateX(-9px);
     }
 
+    &_right {
+
+      @media (min-width: $mobile) {
+        transform: translateX(10px);
+      }
+
+      @media (min-width: $desktop) {
+        transform: translateX(0);
+      }
+    }
+
     @media (min-width: $mobile-s) {
       margin-bottom: 8px;
     }
