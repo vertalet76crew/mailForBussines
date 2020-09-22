@@ -8,9 +8,12 @@ function partnersCarousel() {
         $slider.owlCarousel({
             nav: false,
             dots: true,
-            smartSpeed: 700,
+            smartSpeed: 2000,
             startPosition: 1,
             loop: true,
+            fluidSpeed: 2000,
+            dotsSpeed: 2000,
+            dragEndSpeed: 1000,
             responsive: {
                 320: {
                     autoWidth: false,
@@ -18,7 +21,6 @@ function partnersCarousel() {
                     margin: 20,
                     items: 1,
                     center: true,
-                    dots: false,
                     loop: false
                 },
                 1020: {

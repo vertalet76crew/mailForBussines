@@ -38,15 +38,7 @@
     }
 
     &_first {
-      padding-left: 10px;
-
-      @media (min-width: $tablet) {
-        padding-left: 40px;
-      }
-
-      @media (min-width: $desktop-l) {
-        padding-left: 60px;
-      }
+      padding-left: 20px;
     }
 
     &_last {
