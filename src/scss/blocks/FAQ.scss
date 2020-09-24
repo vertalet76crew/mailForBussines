@@ -45,7 +45,7 @@
       display: block;
     }
 
-    @media (min-width: $mobile) {
+    @media (min-width: $mobile-m) {
       flex-direction: column;
       margin-left: 0;
       margin-right: 0;
