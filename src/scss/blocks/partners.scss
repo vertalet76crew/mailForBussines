@@ -7,14 +7,15 @@
   position: relative;
 
   &__wrap {
-    @media (min-width: $mobile-s) {
+    width: 100%;
+    margin: 0 auto;
+    padding: 42px 10px;
+    box-sizing: border-box;
+    @media (min-width: $mobile) {
       max-width: 355px;
-      margin: 0 auto;
-      padding: 42px 10px;
     }
     @media (min-width: $tablet) {
       max-width: 500px;
-      // transform: translateX(-100px);
       width: 100%;
       margin: 0 auto;
       padding: 42px 0;
@@ -62,11 +63,10 @@
   }
 
   &__text {
-    @media (min-width: $mobile-s) {
-      font-size: $font-size-24;
-      line-height: $line-height-30;
-      font-weight: 700;
-    }
+    font-size: $font-size-24;
+    line-height: $line-height-30;
+    font-weight: 700;
+
     @media (min-width: $tablet) {
       font-size: $font-size-24;
       line-height: $line-height-30;
@@ -87,7 +87,6 @@
   }
 
   .owl-stage {
-
     @media (min-width: $desktop) {
       margin-top: 38px;
     }
@@ -101,18 +100,17 @@
     flex-direction: column;
     justify-content: space-between;
     transition: min-height, width, height, transform ease 0.5s;
-
-    @media (min-width: $mobile-s) {
-      background: #fcfcfc;
-      border-radius: 24px;
+    background: #fcfcfc;
+    border-radius: 24px;
+    min-height: 572px;
+    padding: 28px;
+    box-sizing: border-box;
+    @media (min-width: $mobile) {
       min-height: 512px;
-      padding: 28px;
-      box-sizing: border-box;
     }
 
     @media (min-width: $tablet) {
       border-radius: 24px;
-      min-height: 512px;
     }
 
     @media (min-width: $desktop) {
@@ -186,9 +184,8 @@
         transform: translate(-15px, -22px);
       }
 
-
       .partners__text {
-        font-weight: 600;
+        font-weight: 700;
       }
     }
   }
@@ -203,7 +200,7 @@
       }
     }
 
-    @media (min-width: $mobile) {
+    @media (min-width: $mobile-s) {
       margin-top: 34px;
     }
 
@@ -227,11 +224,9 @@
   }
 
   &__name {
-    @media (min-width: $mobile-s) {
-      font-size: $font-size-20;
-      line-height: $line-height-30;
-      font-weight: 500;
-    }
+    font-size: $font-size-20;
+    line-height: $line-height-30;
+    font-weight: 500;
     @media (min-width: $desktop) {
       font-size: $font-size-18;
       line-height: $line-height-28;
@@ -245,10 +240,8 @@
   }
 
   &__description {
-    @media (min-width: $mobile-s) {
-      font-size: $font-size-15;
-      line-height: $line-height-24;
-    }
+    font-size: $font-size-15;
+    line-height: $line-height-24;
     @media (min-width: $desktop-l) {
       font-size: $font-size-18;
       line-height: $line-height-30;
