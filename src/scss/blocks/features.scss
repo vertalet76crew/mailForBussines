@@ -124,6 +124,135 @@
     }
   }
 
+  &__img {
+    &_1 {
+      width: 44px;
+      height: 44px;
+      @media (min-width: $desktop) {
+        width: 40px;
+        height: 40px;
+      }
+
+      @media (min-width: $desktop-l) {
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    &_2 {
+      width: 44px;
+      height: 44px;
+      @media (min-width: $desktop) {
+        width: 40px;
+        height: 40px;
+      }
+
+      @media (min-width: $desktop-l) {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    &_3 {
+      width: 44px;
+      height: 44px;
+      @media (min-width: $desktop) {
+        width: 40px;
+        height: 40px;
+      }
+
+      @media (min-width: $desktop-l) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+
+    &_4 {
+      width: 44px;
+      height: 44px;
+      @media (min-width: $desktop) {
+        width: 40px;
+        height: 40px;
+      }
+
+      @media (min-width: $desktop-l) {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    &_5 {
+      width: 46px;
+      height: 44px;
+      @media (min-width: $desktop) {
+        width: 44px;
+        height: 42px;
+      }
+
+      @media (min-width: $desktop-l) {
+        width: 60px;
+        height: 57px;
+      }
+    }
+
+    &_6 {
+      width: 44px;
+      height: 44px;
+      @media (min-width: $desktop) {
+        width: 40px;
+        height: 40px;
+      }
+
+      @media (min-width: $desktop-l) {
+        width: 59px;
+        height: 58px;
+      }
+    }
+
+    &_7 {
+      width: 46px;
+      height: 38px;
+      @media (min-width: $desktop) {
+        width: 39px;
+        height: 32px;
+      }
+
+      @media (min-width: $desktop-l) {
+        width: 56px;
+        height: 56px;
+      }
+    }
+
+    &_8 {
+      width: 66px;
+      height: 60px;
+      @media (min-width: $desktop) {
+        width: 61px;
+        height: 56px;
+      }
+
+      @media (min-width: $desktop-l) {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &_9 {
+      width: 54px;
+      height: 56px;
+      transform: translateY(-10px);
+      @media (min-width: $desktop) {
+        width: 46px;
+        height: 48px;
+      }
+
+      @media (min-width: $desktop-l) {
+        width: 60px;
+        height: 60px;
+      }
+    }
+  }
+
   &__text {
     margin: 0;
     font-weight: 400;
