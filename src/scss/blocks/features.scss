@@ -87,168 +87,197 @@
   }
 
   &__icon {
-    height: 60px;
-    width: 60px;
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin: 0 auto 20px;
-
-    &_left {
-      transform: translateX(-9px);
-    }
-
-    &_right {
-      @media (min-width: $mobile) {
-        transform: translateX(10px);
-      }
-
-      @media (min-width: $desktop) {
-        transform: translateX(0);
-      }
-    }
-
-    @media (min-width: $mobile-s) {
-      margin-bottom: 8px;
-    }
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: left;
+    margin: 0 auto;
+    margin-bottom: 20px;
 
     @media (min-width: $desktop) {
-      margin-left: 0;
-      margin-right: 0;
-      margin-bottom: 18px;
+      margin: 0;
+      margin-bottom: 12px;
     }
-
     @media (min-width: $desktop-l) {
-      height: 80px;
-      width: 80px;
+      margin-bottom: 13px;
     }
-  }
 
-  &__img {
     &_1 {
-      width: 44px;
-      height: 44px;
-      @media (min-width: $desktop) {
-        width: 40px;
-        height: 40px;
-      }
+      width: 60px;
+      height: 60px;
+      background-image: url($img + "/icon-mobile-1.svg");
 
+      @media (min-width: $tablet) {
+        background-image: url($img + "/icon-1.svg");
+        width: 60px;
+        height: 60px;
+      }
+      @media (min-width: $desktop) {
+        transform: translateX(-11px);
+      }
       @media (min-width: $desktop-l) {
-        width: 50px;
-        height: 50px;
+        width: 80px;
+        height: 80px;
+        transform: translateX(-15px);
       }
     }
 
     &_2 {
-      width: 44px;
-      height: 44px;
-      @media (min-width: $desktop) {
-        width: 40px;
-        height: 40px;
-      }
+      width: 60px;
+      height: 60px;
+      background-image: url($img + "/icon-mobile-2.svg");
 
+      @media (min-width: $tablet) {
+        background-image: url($img + "/icon-2.svg");
+        width: 60px;
+        height: 60px;
+      }
+      @media (min-width: $desktop) {
+        transform: translateX(-11px);
+      }
       @media (min-width: $desktop-l) {
-        width: 56px;
-        height: 56px;
+        width: 80px;
+        height: 80px;
+        transform: translateX(-14px);
       }
     }
 
     &_3 {
-      width: 44px;
-      height: 44px;
-      @media (min-width: $desktop) {
-        width: 40px;
-        height: 40px;
-      }
+      width: 60px;
+      height: 60px;
+      background-image: url($img + "/icon-mobile-3.svg");
 
-      @media (min-width: $desktop-l) {
+      @media (min-width: $tablet) {
+        background-image: url($img + "/icon-3.svg");
         width: 60px;
         height: 60px;
+      }
+      @media (min-width: $desktop) {
+        transform: translateX(-6px);
+      }
+      @media (min-width: $desktop-l) {
+        width: 80px;
+        height: 80px;
+        transform: translateX(-8px);
       }
     }
 
     &_4 {
-      width: 44px;
-      height: 44px;
-      @media (min-width: $desktop) {
-        width: 40px;
-        height: 40px;
-      }
+      width: 60px;
+      height: 60px;
+      background-image: url($img + "/icon-mobile-4.svg");
 
+      @media (min-width: $tablet) {
+        background-image: url($img + "/icon-4.svg");
+        width: 60px;
+        height: 60px;
+      }
+      @media (min-width: $desktop) {
+        transform: translateX(-9px);
+      }
       @media (min-width: $desktop-l) {
-        width: 56px;
-        height: 56px;
+        width: 80px;
+        height: 80px;
+        transform: translateX(-11px);
       }
     }
 
     &_5 {
-      width: 46px;
-      height: 44px;
-      @media (min-width: $desktop) {
-        width: 44px;
-        height: 42px;
-      }
+      width: 60px;
+      height: 60px;
+      background-image: url($img + "/icon-mobile-5.svg");
 
-      @media (min-width: $desktop-l) {
+      @media (min-width: $tablet) {
+        background-image: url($img + "/icon-5.svg");
         width: 60px;
-        height: 57px;
+        height: 60px;
+      }
+      @media (min-width: $desktop) {
+        transform: translateX(-8px);
+      }
+      @media (min-width: $desktop-l) {
+        width: 80px;
+        height: 80px;
+        transform: translateX(-9px);
       }
     }
 
     &_6 {
-      width: 44px;
-      height: 44px;
-      @media (min-width: $desktop) {
-        width: 40px;
-        height: 40px;
-      }
+      width: 60px;
+      height: 60px;
+      background-image: url($img + "/icon-mobile-6.svg");
 
+      @media (min-width: $tablet) {
+        background-image: url($img + "/icon-6.svg");
+        width: 60px;
+        height: 60px;
+      }
+      @media (min-width: $desktop) {
+        transform: translateX(-7px);
+      }
       @media (min-width: $desktop-l) {
-        width: 59px;
-        height: 58px;
+        width: 80px;
+        height: 80px;
+        transform: translateX(-9px);
       }
     }
 
     &_7 {
-      width: 46px;
-      height: 38px;
-      @media (min-width: $desktop) {
-        width: 39px;
-        height: 32px;
-      }
+      width: 60px;
+      height: 60px;
+      background-image: url($img + "/icon-mobile-7.svg");
 
+      @media (min-width: $tablet) {
+        background-image: url($img + "/icon-7.svg");
+        width: 60px;
+        height: 60px;
+      }
+      @media (min-width: $desktop) {
+        transform: translateX(-9px);
+      }
       @media (min-width: $desktop-l) {
-        width: 56px;
-        height: 56px;
+        width: 80px;
+        height: 80px;
+        transform: translateX(-12px);
       }
     }
 
     &_8 {
-      width: 66px;
+      width: 60px;
       height: 60px;
-      @media (min-width: $desktop) {
-        width: 61px;
-        height: 56px;
-      }
+      background-image: url($img + "/icon-mobile-8.svg");
 
+      @media (min-width: $tablet) {
+        background-image: url($img + "/icon-8.svg");
+        width: 60px;
+        height: 60px;
+      }
+      @media (min-width: $desktop) {
+        transform: translateX(-8px);
+      }
       @media (min-width: $desktop-l) {
         width: 80px;
         height: 80px;
+        transform: translateX(-11px);
       }
     }
 
     &_9 {
-      width: 54px;
-      height: 56px;
-      transform: translateY(-10px);
-      @media (min-width: $desktop) {
-        width: 46px;
-        height: 48px;
-      }
+      width: 60px;
+      height: 60px;
+      background-image: url($img + "/icon-mobile-9.svg");
 
-      @media (min-width: $desktop-l) {
+      @media (min-width: $tablet) {
+        background-image: url($img + "/icon-9.svg");
         width: 60px;
         height: 60px;
+      }
+      @media (min-width: $desktop) {
+        transform: translateX(-7px);
+      }
+      @media (min-width: $desktop-l) {
+        width: 80px;
+        height: 80px;
+        transform: translateX(-9px);
       }
     }
   }

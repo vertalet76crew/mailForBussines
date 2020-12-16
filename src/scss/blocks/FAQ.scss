@@ -69,8 +69,12 @@
     }
 
     &-title {
+      max-width: 300px;
       @media (min-width: $mobile-s) {
         display: none;
+      }
+      @media (min-width: $tablet) {
+        max-width: 100%;
       }
 
       @media (min-width: $desktop) {
