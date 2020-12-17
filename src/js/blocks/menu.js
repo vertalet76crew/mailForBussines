@@ -17,16 +17,15 @@ function menu(isMobile) {
         e.preventDefault();
     });
 
-    $menu.on('click', '[data-target="child"]', function(e) {
-        const $item = $(this).parent();
+    $('body').on('click', function(e) {
+        const $item = $(e.target).parent();
 
-        if (isMobile || window.matchMedia('(max-width: 1019px)').matches) {
-            $item.toggleClass('menu__item_open')
-                .siblings()
-                .removeClass('menu__item_open');
+        if ($item.closest('.menu__item').length) {
+            $item.addClass('menu__item_open');
+            $item.siblings().removeClass('menu__item_open');
+        } else {
+            $('[data-target="child"]').parent().removeClass('menu__item_open');
         }
-
-        e.preventDefault();
     });
 
     function closeMenu() {

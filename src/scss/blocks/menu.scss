@@ -50,7 +50,7 @@
     }
 
     .menu__door {
-      background-image: url($img + "/close.svg");
+      background-image: url($img + "/close-white.svg");
     }
   }
 
@@ -160,7 +160,6 @@
     list-style: none;
     // list-style-image: url('data:0');
 
-
     @media (min-width: $desktop) {
       position: absolute;
       top: 28px;
@@ -213,23 +212,10 @@
     list-style: none;
 
     &:hover {
-      .menu__level2 {
-        display: block;
-        list-style: none;
-        list-style-image: none;
-        list-style-type: none;
-        overflow: hidden;
-      }
-
       .menu__link {
         color: $color-menu-link-active;
       }
-
-      .menu__arrow {
-        transform: translateY(-50%) scale(1, -1);
-      }
     }
-
 
     @media (min-height: $mobile-height) {
       margin: 0 0 10px;
@@ -265,13 +251,13 @@
           color: $color-menu-link-active;
         }
 
-        .menu__arrow {
-          transform: translateY(-50%) scale(1, -1);
-        }
+        // .menu__arrow {
+        //   transform: translateY(-50%) scale(1, -1);
+        // }
 
-        .menu__level2 {
-          display: block;
-        }
+        // .menu__level2 {
+        //   display: block;
+        // }
       }
     }
   }
