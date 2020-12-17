@@ -11,6 +11,7 @@ import partnersCarousel from './blocks/partners';
 $(function() {
     const patternUserAgent = /iPhone|iPod|iPad|iOS|android/i;
     const isMobile = !!navigator.userAgent.match(patternUserAgent);
+
     menu(isMobile);
     formRequest(isMobile);
     newsCarousel();

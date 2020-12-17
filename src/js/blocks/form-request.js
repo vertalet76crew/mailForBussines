@@ -13,7 +13,6 @@ function formRequest(isMobile) {
     const classHideForm = 'popup__form_hide';
     const classSendForm = 'popup__send_active';
     const im = new Inputmask('+7(999) 999-99-99');
-
     im.mask(document.querySelector('[name="phone"]'));
 
     $body.on('click', '[data-target="formRequest"]', function(e) {
