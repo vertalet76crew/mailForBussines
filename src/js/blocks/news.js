@@ -12,7 +12,7 @@ function newsCarousel() {
             autoWidth: true,
             responsiveClass: true,
             margin: 0,
-            items: 1,
+            items: 3,
             smartSpeed: 700,
             stagePadding: 20
         });
