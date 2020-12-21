@@ -21,7 +21,7 @@ function menu(isMobile) {
         const $item = $(e.target).parent();
 
         if ($item.closest('.menu__item').length) {
-            $item.addClass('menu__item_open');
+            $item.toggleClass('menu__item_open');
             $item.siblings().removeClass('menu__item_open');
         } else {
             $('[data-target="child"]').parent().removeClass('menu__item_open');
