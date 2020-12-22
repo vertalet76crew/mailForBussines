@@ -136,6 +136,7 @@
     fill: currentColor;
     width: 24px;
     height: 24px;
+    z-index: -1;
 
     @media (min-width: $tablet) {
       right: 40px;
