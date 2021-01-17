@@ -140,6 +140,12 @@
 
   .faq_button {
     max-width: 100%;
+    @media (min-width: $tablet) {
+      max-width: 163px;
+    }
+    @media (min-width: $desktop-l) {
+      max-width: 210px;
+    }
   }
 
   &__link {
