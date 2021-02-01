@@ -28,6 +28,7 @@
     @media (min-width: $desktop) {
       display: block;
       max-width: 1080px;
+      padding: 0 106px;
       box-sizing: content-box;
     }
   }
@@ -59,7 +60,7 @@
       max-width: 280px;
 
       &_mr {
-        margin-right: 32px;
+        margin-right: 44px;
       }
 
       &:last-child {
