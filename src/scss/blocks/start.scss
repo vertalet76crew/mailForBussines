@@ -14,8 +14,8 @@
   }
 
   @media (min-width: $tablet) {
-    padding-top: 180px;
-    padding-bottom: 180px;
+    padding-top: 124px;
+    padding-bottom: 78px;
   }
 
   @media (min-width: $desktop) {
@@ -39,7 +39,7 @@
     @media (min-width: $tablet) {
       font-size: $font-size-44;
       line-height: $line-height-50;
-      margin-bottom: 20px;
+      margin-bottom: 12px;
     }
 
     @media (min-width: $desktop) {
@@ -113,6 +113,7 @@
 
     @media (min-width: $tablet) {
       max-width: 360px;
+      margin-top: 32px;
     }
 
     @media (min-width: $desktop) {
