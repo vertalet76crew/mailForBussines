@@ -1,7 +1,7 @@
 .footer {
-  @import '../main/variables';
-  @import '../main/variables.fonts';
-  @import '../main/variables.colors';
+  @import "../main/variables";
+  @import "../main/variables.fonts";
+  @import "../main/variables.colors";
 
   padding-top: 30px;
   padding-bottom: 50px;
@@ -135,11 +135,6 @@
 
       @media (min-width: $tablet) {
         margin-top: 0;
-      }
-
-      @media (min-width: $desktop) and (max-width: ($desktop-l - 1)) {
-        font-size: $font-size-11;
-        line-height: $line-height-15;
       }
     }
 
